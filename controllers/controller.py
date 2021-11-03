@@ -7,3 +7,7 @@ def orders():
     # print(orders)
     # print(orders.order1)
     return render_template("index.html", title="Orders", orders=orders_list)
+
+@app.route('/orders/<index>')
+def order(index):
+    return render_template("order.html", title="Order", order=orders_list[int(index)])

@@ -8,10 +8,6 @@
 </head>
 <body>
     <h1>{{ title }}</h1>
-    <ul>
-    {% for order in orders %}
-        <a href="/orders/{{orders.index(order)}}"><li>{{ order.customer_name }}: {{ order.order_date }}: Quantity - {{order.quantity}} : Title - {{order.book_title}} </li></a>
-    {% endfor %}
-    </ul>
+  <p>{{ order.customer_name }}: {{ order.order_date }}: Quantity - {{order.quantity}} : Title - {{order.book_title}} </p>
 </body>
 </html>
