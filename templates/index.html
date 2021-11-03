@@ -10,7 +10,7 @@
     <h1>{{ title }}</h1>
     <ul>
     {% for order in orders %}
-        <li>{{ order.customer_name }}: {{ order.order_date }}: Quantity - {{order.quantity}} </li>
+        <li>{{ order.customer_name }}: {{ order.order_date }}: Quantity - {{order.quantity}} : Title - {{order.book_title}} </li>
     {% endfor %}
     </ul>
 </body>
